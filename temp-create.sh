@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/pi/Projects/Pingomatic/log
+cd /home/pi/log
 
 /usr/bin/rrdtool create temp.rrd \
 --step 60 \

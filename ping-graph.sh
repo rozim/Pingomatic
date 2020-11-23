@@ -13,7 +13,8 @@ cd /home/pi/log
 --lower-limit 0 \
 --right-axis 1:0 \
 --x-grid MINUTE:10:HOUR:1:MINUTE:120:0:%R \
---alt-y-grid --rigid \
+                 --alt-y-grid \
+                 --rigid \
 DEF:roundtrip=ping.rrd:max:MAX \
 DEF:packetloss=ping.rrd:received:MAX \
 CDEF:PLNone=packetloss,0,0,LIMIT,UN,UNKN,INF,IF \
