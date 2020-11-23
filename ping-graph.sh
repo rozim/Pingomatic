@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/pi/Projects/Pingomatic/log
+cd /home/pi/log
 /usr/bin/rrdtool graph /var/www/html/pingomatic/ping.png \
 -w 785 -h 120 -a PNG \
 --slope-mode \

@@ -12,7 +12,7 @@ ${command} > ${out}
 received=$(grep transmitted ${out} |  cut --fields=2 -d, | cut --fields=2 -d" ")
 max=$(grep "rtt min/avg/max/mdev" ${out} | cut --fields=6 -d /)
 
-cd /home/pi/Projects/Pingomatic/log
+cd /home/pi/log
 cp ${out} last.txt
 echo received=${received} >> last.txt
 echo max=${max} >> last.txt

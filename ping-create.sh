@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cd /home/pi/Projects/Pingomatic/log
-
-
+cd /home/pi/log
 
 /usr/bin/rrdtool create ping.rrd \
 --step 60 \
